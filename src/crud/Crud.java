@@ -1,10 +1,14 @@
 package crud;
 
+import utilidades.Conexao;
+
 public class Crud {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		if (Conexao.Conectar() != null) {
+			System.out.println("Conectado");
+		}
 	}
 
 }
